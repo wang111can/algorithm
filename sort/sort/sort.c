@@ -118,7 +118,7 @@ int Sort2(int* a, int left, int right)
 	int cur = left + 1, prev = left;
 	while (cur <= right)
 	{
-		if (++prev!=cur&&a[cur] <a[key])
+		if (prev!=cur&&a[cur] <a[key])
 		{
 			++prev;
 			Swap(&a[cur], &a[prev]);
